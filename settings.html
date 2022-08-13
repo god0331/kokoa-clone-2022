@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings - Kokoa Clone</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fas fa-wifi"></i>
       </div>
-      <!--뭔말인지 모르겠다. 일단 따라해보자.-->
       <div class="status-bar__column">
         <span>18:12</span>
       </div>
@@ -23,9 +23,12 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+
     <header class="alt-header">
       <div class="alt-header__column">
-        <i class="fas fa-angle-left fa-2x"></i>
+        <a href="more.html">
+          <i class="fas fa-angle-left fa-2x"></i>
+        </a>
       </div>
       <div class="alt-header__column">
         <h1 class="alt-header__title">Settings</h1>
@@ -35,17 +38,26 @@
 
     <main class="main-screen">
       <ul class="settings-list">
-        <li class="settings-setting">
-          <i class="fas fa-megaphone"></i>
-          <span>notices</span>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fab fa-airbnb"></i>
+            <span>notices</span>
+          </div>
+          <div class="settings__setting-column"></div>
         </li>
-        <li class="settings-setting">
-          <i class="fas fa-flask"></i>
-          <span>kokoa lab</span>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-flask"></i>
+            <span>kokoa lab</span>
+          </div>
+          <div class="settings__setting-column"></div>
         </li>
-        <li class="settings-setting">
-          <i class="fas fa-info-circle"></i>
-          <span>version</span>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-info-circle"></i>
+            <span>version</span>
+          </div>
+          <div class="settings__setting-column">Latest Version</div>
         </li>
       </ul>
     </main>
@@ -76,6 +88,9 @@
         </li>
       </ul>
     </nav>
+    <div id="no-mobile">
+      <span>Your screen is too bigㅠㅠ</span>
+    </div>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
